@@ -1,0 +1,25 @@
+{
+  "name": "Animations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "dev": "parcel watch index.html",
+    "build": "parcel build index.html --public-url ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bartek532/animations.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bartek532/animations/issues"
+  },
+  "homepage": "https://github.com/Bartek532/animations#readme",
+  "devDependencies": {
+    "sass": "^1.32.11"
+  }
+}
