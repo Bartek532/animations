@@ -18,25 +18,21 @@
 
   <body>
     <main class="main">
-      <!--
       <div class="modal">
-        <div class="icons">
-          <div class="redo"><i class="fas fa-redo-alt"></i></div>
-          <div class="close"><i class="fas fa-times"></i></div>
-        </div>
+        <button class="redo"><i class="fas fa-redo-alt"></i></button>
         <div class="frame"></div>
       </div>
-      -->
       <div class="picker">
         <input type="color" class="color" value="#6C63FF" />
         <span class="label">Pick a color</span>
       </div>
-      <button class="anime">
+      <button class="anime" data-animation="first">
         <div class="animation">
           <svg
             viewBox="0 0 582 522"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            class="animation"
           >
             <rect width="582" height="522" fill="#fff" />
             <g id="Frame 1">
@@ -142,7 +138,7 @@
           </svg>
         </div>
       </button>
-      <button class="anime">
+      <button class="anime" data-animation="second">
         <div class="animation">
           <svg
             viewBox="0 0 911 603"
@@ -331,7 +327,7 @@
           </svg>
         </div>
       </button>
-      <button class="anime">
+      <button class="anime" data-animation="third">
         <div class="animation">
           <svg
             viewBox="0 0 798 742"
@@ -524,7 +520,7 @@
           </svg>
         </div>
       </button>
-      <button class="anime">
+      <button class="anime" data-animation="fourth">
         <div class="animation">
           <svg
             viewBox="0 0 886 665"
@@ -1173,7 +1169,7 @@
           </svg>
         </div>
       </button>
-      <button class="anime">
+      <button class="anime" data-animation="fifth">
         <div class="animation">
           <svg
             viewBox="0 0 893 542"
@@ -1466,7 +1462,7 @@
           </svg>
         </div>
       </button>
-      <button class="anime">
+      <button class="anime" data-animation="sixth">
         <div class="animation">
           <svg
             viewBox="0 0 885 680"
@@ -1617,7 +1613,7 @@
           </svg>
         </div>
       </button>
-      <button class="anime">
+      <button class="anime" data-animation="seventh">
         <div class="animation">
           <svg
             viewBox="0 0 1117 741"
@@ -1894,7 +1890,7 @@
           </svg>
         </div>
       </button>
-      <button class="anime">
+      <button class="anime" data-animation="eighth">
         <div class="animation">
           <svg
             viewBox="0 0 886 655"
@@ -2166,7 +2162,7 @@
           </svg>
         </div>
       </button>
-      <button class="anime">
+      <button class="anime" data-animation="ninth">
         <div class="animation">
           <svg
             viewBox="0 0 1056 430"
@@ -2292,35 +2288,7 @@
         </div>
       </button>
     </main>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"
-      integrity="sha512-3WGIRFCuTpZhqYujwLp5RtARPkOy3uRtc3RXB31bJ9/i6VH2C66Z0WBV6gHhdhbUIDKFx8yTkLfEjdQM5Wl+ZQ=="
-      crossorigin="anonymous"
-    ></script>
-    <script src="./script.js"></script>
-    <script>
-      const color = document.querySelector(".color");
-      const elements = document.querySelectorAll("path");
-      const plusses = document.querySelectorAll(".plus");
-      const animes = document.querySelectorAll(".main .anime");
-
-      const colorElements = Array.from(elements).filter(
-        item => item.getAttribute("fill") == "#6C63FF"
-      );
-
-      color.addEventListener("input", e => {
-        for (const element of colorElements) {
-          element.setAttribute("fill", e.target.value);
-        }
-
-        for (const plus of plusses) {
-          plus.style.color = e.target.value;
-        }
-
-        for (const anime of animes) {
-          anime.style.border = `0.5px solid ${e.target.value}`;
-        }
-      });
-    </script>
+    <script src="./scripts/index.ts"></script>
+    <script src="./scripts/animation.ts"></script>
   </body>
 </html>
