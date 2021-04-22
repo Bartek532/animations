@@ -15,8 +15,33 @@ body {
 
 .main {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   place-items: center;
+  grid-gap: 5px;
+
+  .picker {
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    .label {
+      font-size: 0.47rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-family: Roboto, sans-serif;
+    }
+
+    .color {
+      border: 0 none;
+      width: 60px;
+      height: 30px;
+      cursor: pointer;
+    }
+  }
 
   .anime {
     width: 100%;
@@ -32,8 +57,9 @@ body {
     background-color: transparent;
     transition: transform 0.3s;
 
-    &:focus {
-      transform: scale(0.9);
+    &:focus,
+    &:hover {
+      transform: scale(0.95);
     }
     .animation {
       width: 100%;
