@@ -6,7 +6,7 @@ Animations 🦙
 
 ## Project Overview 🎨
 
-A website that can inspire you to create new, better apps or websites, fully responsiev, made without media queries. I keep adding new animations, so check back often and don't miss anything. If you have any idea about animation or have found a streamlined create an [issue](https://github.com/Bartek532/animations/issues) or [pull request](Bartek532/animations/pulls) and share it with me. Enjoy!
+A website that can inspire you to create new, better apps or websites, fully responsive, made without media queries. I keep adding new animations, so check back often and don't miss anything. If you have any idea about animation or have found a streamlined create an [issue](https://github.com/Bartek532/animations/issues) or [pull request](Bartek532/animations/pulls) and share it with me. Enjoy!
 
 ## Tech/framework used 🧰
 
