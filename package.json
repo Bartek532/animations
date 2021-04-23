@@ -4,9 +4,9 @@
   "description": "",
   "main": "dist/index.html",
   "scripts": {
-    "start": "parcel index.html",
+    "start": "parcel index.html --no-cache",
     "dev": "parcel watch index.html",
-    "build": "parcel build index.html --public-url ./"
+    "build": "parcel build index.html --public-url ./ --no-cache"
   },
   "repository": {
     "type": "git",
